@@ -1,0 +1,16 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>
+            {%block title%}
+            {%endblock%}
+        </title>
+    <link rel="stylesheet" href="{%static 'css/menu.css'%}">
+    </head>
+    <body class="square">
+        <a href="{%url 'index'%}"><img src="{%static 'images/S_ecialkaik.png'%}" class="text"></a>
+        {%block page%}
+        {%endblock%}
+    </body>
+</html>
