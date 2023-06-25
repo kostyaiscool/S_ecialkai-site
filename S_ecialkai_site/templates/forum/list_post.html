@@ -6,28 +6,26 @@
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <!-- {#
-        {%for i in post_count%}
-        <div class="card" style="width: 18rem;">
-            {% if file_types[forloop.counter] in ['jpg', 'png', 'bmp']%}
-            <img src="..." class="card-img-top" alt="...">
-            {%endif%}
-            {% if file_types[i] in ['mp4', 'webm', 'mov']%}
-            <video src="..." class="card-img-top" alt="...">
-            {%endif%}
-            {% if file_types[i] in ['mp3', 'wav']%}
-            <audio src="..." class="card-img-top" alt="...">
-            {%endif%}
-            {% if file_types[i] in ['txt']%}
-            <h3 src="..." class="card-img-top" alt="...">
-            {%endif%}
-
-            <div class="card-body">
-              <h5 class="card-title">{{posts[i].title}}</h5>
-              <p class="card-text">{{posts[i].text}}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>#} -->
-        {%endfor%}
+       {%for post in posts%}
+       <div class="container d-flex justify-content-center align-items-center">
+       
+       <div class="card" style="width: 50rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.text}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      </div>
+       {%endfor%}
     </body>
 </html>
