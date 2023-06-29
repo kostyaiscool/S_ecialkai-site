@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'menu.apps.MenuConfig',
-    's_ecialkaik_forum.apps.SEcialkaikForumConfig'
+    's_ecialkaik_forum.apps.SEcialkaikForumConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [

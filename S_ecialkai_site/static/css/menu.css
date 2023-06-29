@@ -9,7 +9,7 @@
         width:250px;
         height:120px;
         position:fixed;
-        left:45%;
+        left:42.5%;
         top:0%;
     }
     .Games{
@@ -32,4 +32,17 @@
     position:fixed;
     left:45%;
     top:60%;
+    }
+    .Forum{
+        width:200px;
+        height:120px;
+        position:fixed;
+        left:45%;
+        top:80%;
+        }
+    .Donate_text{
+        top:20%;
+        position: fixed;
+        color: white;
+        
     }
