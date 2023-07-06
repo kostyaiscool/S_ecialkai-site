@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 # from django.http import HttpResponse
 def index(request):
     # return HttpResponse('Helo world')
-    return render(request, 'menu/index.html')
+    return render(request, 'menu/Index.html')
 class DonateView(TemplateView):
     template_name = 'menu/Donate.html'
 class GameView(TemplateView):
