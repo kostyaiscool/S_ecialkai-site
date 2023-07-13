@@ -46,3 +46,17 @@
         color: white;
         
     }
+    .Exit_button{
+        width:200px;
+        height:120px;
+        position:fixed;
+        left:15%;
+        top:80%;
+        }
+    .Login_button{
+        width:200px;
+        height:120px;
+        position:fixed;
+        left:70%;
+        top:80%;
+            }

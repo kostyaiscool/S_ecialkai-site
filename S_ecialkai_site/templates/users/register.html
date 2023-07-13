@@ -16,10 +16,12 @@
             <a href="{%url 'index'%}"><img src="{%static 'images/S_ecialkaik.png'%}" class="text"></a>
             <div class="position-absolute top-50 start-50 translate-middle">
                 <form method="post" action="{% url 'register' %}">
+                    {{ form.non_field_errors}}
                     {% csrf_token %}
                     {% for f in form %}
                         <h2 style="color: aliceblue">{{ f.label}}</h2>
                         {{ f }}
+                        <h3 style="color: aliceblue">{{ f.errors}}</h3>
                     {% endfor %}
                     <br><br>
                     <input type="submit" value="Register" class="btn btn-light">
